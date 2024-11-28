@@ -14,10 +14,17 @@
       height: 100%;
       background-color: #E9EFF9;
       font-family: Arial, sans-serif;
-      overflow: hidden; /* Prevent any scrolling */
       display: flex;
       justify-content: center;
       align-items: center;
+      overflow: hidden; /* Prevent any scrolling */
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
     }
 
     .game-board {
@@ -56,14 +63,12 @@
     }
 
     .message {
-      margin-top: 20px;
       font-size: 1.2rem;
       color: #333;
       text-align: center;
     }
 
     button {
-      margin-top: 20px;
       padding: 10px 20px;
       font-size: 1rem;
       border: none;
@@ -80,7 +85,7 @@
   </style>
 </head>
 <body>
-  <div>
+  <div class="container">
     <div class="game-board" id="gameBoard"></div>
     <div class="message" id="message"></div>
     <button id="resetButton">Reset Game</button>
